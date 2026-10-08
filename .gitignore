@@ -1,0 +1,23 @@
+# Secrets: never commit your API key
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Archived runs and cached task reference (regenerated automatically)
+logs_archive/
+.cache/
+
+# Excel lock file, created while experiment_tracker.xlsx is open
+~$*.xlsx
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# experiment_tracker.xlsx and logs/ are intentionally NOT ignored: the sheet is rebuilt from logs/,
+# so both are committed to keep every recorded run.
