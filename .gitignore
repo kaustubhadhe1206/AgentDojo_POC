@@ -10,6 +10,10 @@ __pycache__/
 logs_archive/
 .cache/
 
+# Local-model benchmark (phase 6): downloaded models and run output, if run outside Colab/Drive
+local_models_cache/
+local_benchmark_output/
+
 # Excel lock file, created while experiment_tracker.xlsx is open
 ~$*.xlsx
 

@@ -14,6 +14,10 @@ with and without the AgentDojo benchmark. Every run is recorded in `experiment_t
 | `phase3_quick_attack_test.py` | Run: one-call attack → *Quick attack test (homemade)* tab |
 | `phase4_no_attack_test.py` | Run: AgentDojo task, no attack → *No-attack test (AgentDojo)* tab |
 | `phase5_full_attack_test.py` | Run: AgentDojo task with attack → *Full attack test (AgentDojo)* tab |
+| `phase6_local_models_benchmark.py` | Run (on Colab): Qwen, Llama and Nemotron from Hugging Face, 50 attacked + 18 no-attack tests each, run in parallel → CSVs on Drive |
+| `colab/local_models_benchmark.ipynb` | The Colab notebook that drives phase 6 (Drive, install, download, run, results) |
+| `local_models.py` | Helper: the local models, model download, vLLM server, AgentDojo agent for local models |
+| `local_test_plan.py` | Helper: the fixed list of tests every local model runs (`python local_test_plan.py` prints it) |
 | `tracker.py` | Helper: builds the Excel sheet (runs automatically; `python tracker.py` to refresh by hand) |
 | `nim_pipeline.py` | Helper: the AgentDojo agent (used by phases 4 and 5) |
 | `config.py` | Helper: endpoint, models, API client |
